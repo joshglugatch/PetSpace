@@ -16,6 +16,13 @@ module.exports = function(sequelize, DataTypes) {
         defaultValue: "Other"
       }
     });
+
+    Comment.associate = function(models) {
+      Comment.belongsTo(models.postID, {foreignKey: postID})
+      Comment.belongsTo(models.User, {foreignKey: userID})
+      
+    };
+
     return Comment;
   };
   

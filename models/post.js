@@ -15,17 +15,16 @@ module.exports = function(sequelize, DataTypes) {
         type: DataTypes.STRING,
         defaultValue: "Other"
       },
-    //   userID: {
-    //       type: DataTypes.INTEGER
-    //   }
+   
     });
 
     Post.associate = function(models) {
-        Post.belongsTo(models.User, {
-            foreignKey: {
-                allowNull: false
-            }
-        })
+        Post.belongsTo(models.User, {foreignKey: userID})
+
+        Post.hasMany(models.Comment) 
+        Post.hasMany(models.Like)
+
+
     }
 
 
