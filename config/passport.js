@@ -1,7 +1,9 @@
 //dependenices 
 var passport = require("passport");
 var LocalStrategy = require("passport-local").Strategy;
+
 var db = require("../models");
+
 //telling passport we want to use local strategy for a login 
 passport.use(new LocalStrategy(
     //user attempting to sign on
@@ -27,14 +29,17 @@ passport.use(new LocalStrategy(
         });
     }
 ));
+
 //Seqeuelize needs to serialize and deserialize the user
 passport.serializeUser(function(user, cb) {
     cb(null, user);
 });
+
 passport.deserializeUser(function(obj, cb) {
     cb(null, obj);
 });
 //exporting
 module.exports= passport;
+
 //Passport purpose authenticatess requests. Its done by Passport and the use of plugins known as strategies.
 //The code will show authentication requests whether its invaild or valid
