@@ -2,28 +2,22 @@
 <html lang="en">
 
 <head>
-  <title>Passport Authentication</title>
+  <title>PetSpace Signup</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
-  <link href="stylesheets/style.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-      </div>
-    </div>
-  </nav>
-  <div class="container">
+  <div class="container col-md-6">
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
         <h2>Sign Up Form</h2>
         <form class="signup">
           <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="email-input" placeholder="Email">
+            <label for="exampleInputusername1">Email address</label>
+            <input type="username" class="form-control" id="username-input" placeholder="username">
           </div>
           <div class="form-group">
             <label for="exampleInputPassword1">Password</label>
@@ -33,11 +27,17 @@
             <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
             <span class="sr-only">Error:</span> <span class="msg"></span>
           </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input">
+              <small>Remember Me</small>
+            </label>
           <button type="submit" class="btn btn-default">Sign Up</button>
-        </form>
+        </div>  
+    </form>
         <br />
-        <p>Or log in <a href="/login">here</a></p>
-      </div>
+        <p>Or log in <a href="/login">here</a></p> 
+        </div>
     </div>
   </div>
 
