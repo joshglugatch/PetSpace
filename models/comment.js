@@ -7,14 +7,6 @@ module.exports = function(sequelize, DataTypes) {
           len: [1-200]
         }
       },
-      imageURL: {
-        type: DataTypes.TEXT,
-        allowNull: false,
-      },
-      animal: {
-        type: DataTypes.STRING,
-        defaultValue: "Other"
-      }
     });
 
     Comment.associate = function(models) {
