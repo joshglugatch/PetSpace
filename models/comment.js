@@ -18,7 +18,7 @@ module.exports = function(sequelize, DataTypes) {
     });
 
     Comment.associate = function(models) {
-      Comment.belongsTo(models.postID, {foreignKey: postID})
+      Comment.belongsTo(models.Post, {foreignKey: postID})
       Comment.belongsTo(models.User, {foreignKey: userID})
       
     };
