@@ -19,7 +19,7 @@ module.exports = function(sequelize, DataTypes) {
     });
 
     Post.associate = function(models) {
-        Post.belongsTo(models.User, {foreignKey: userID})
+        Post.belongsTo(models.User, {foreignKey: { allowNull: false }})
 
         Post.hasMany(models.Comment) 
         Post.hasMany(models.Like)
