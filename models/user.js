@@ -1,7 +1,14 @@
 module.exports = function(sequelize, DataTypes) {
     var User = sequelize.define("User", {
-      // Giving the User model a name of type STRING
-      name: DataTypes.STRING
+      username: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+
+    password: {
+      type: DataTypes.STRING,
+      allowNull: false
+    }
     });
   
     User.associate = function(models) 
@@ -9,7 +16,6 @@ module.exports = function(sequelize, DataTypes) {
       User.hasMany(models.Post) 
       User.hasMany(models.Comment) 
       User.hasMany(models.Like) 
-      
     };
   
     return User;

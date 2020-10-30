@@ -7,10 +7,14 @@ var db = require("../models");
 //telling passport we want to use local strategy for a login 
 passport.use(new LocalStrategy(
     //user attempting to sign on
-    {usernameField: "username"},
+    {
+        usernameField: "username"
+    },
     function(username, password, done) {
         db.User.findOne({
-            where: {username: username}
+            where: {
+                username: username
+            }
         }).then(function(dbUser) {
             //if there's no user with the given username
             if (!dbUser) {
@@ -18,12 +22,12 @@ passport.use(new LocalStrategy(
                     message: "Invalid Username"
                 });
             }
-            // This function for the username valid but the password is invalid
-            else if(!dbUser.validPassword(password)) {
-                return done(null, false, {
-                    message: "Invalid Password"
-                });
-            }
+            // // This function for the username valid but the password is invalid
+            // else if(!dbUser.validPassword(password)) {
+            //     return done(null, false, {
+            //         message: "Invalid Password"
+            //     });
+            // }
             // if none above, it returns to the user
             return done(null,dbUser);
         });
