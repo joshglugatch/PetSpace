@@ -1,13 +1,13 @@
 // 
 $(document).ready(function() {
     var loginForm = $("form.login");
-    var userInput = $("input#user-input");
+    var usernameInput = $("input#username-input");
     var passwordInput = $("input#password-input");
   
     loginForm.on("submit", function(event) {
       event.preventDefault();
       var userData = {
-        username: userInput.val().trim(),
+        username: usernameInput.val().trim(),
         password: passwordInput.val().trim()
       };
   
