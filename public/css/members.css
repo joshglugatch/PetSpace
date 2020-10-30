@@ -9,16 +9,21 @@ h1 {
  }
 
 .card-img-top {
-  width: 500px;
-  height: 325px;
+  width: 150px;
+  height: 150px;
   padding-top: 50px;
 }
 
 .display-4 {
-  color: black;
+  color: white;
   padding-top: 100px;
 }
 
-body {
+body, header {
       background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg");
 }
+
+.card {
+  justify-content: center;
+}
+
