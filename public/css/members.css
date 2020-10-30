@@ -7,3 +7,23 @@ h1 {
      margin-top: -30px;
      margin-bottom: -20px;
  }
+
+.card-img-top {
+  width: 150px;
+  height: 150px;
+  padding-top: 50px;
+}
+
+.display-4 {
+  color: white;
+  padding-top: 100px;
+}
+
+body, header {
+      background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg");
+}
+
+.card {
+  justify-content: center;
+}
+
