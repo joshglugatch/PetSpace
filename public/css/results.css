@@ -1,0 +1,13 @@
+.jumbotron {
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+header, body{
+    background-image: url(../images/space-background.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+  }
+
+h1 {
+    color: white;
+  }
