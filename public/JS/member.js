@@ -3,3 +3,9 @@ $(document).ready(function() {
       $(".member-name").text(data.username);
     });
   });
+
+  $(function () {
+    $("#dropdown a").click(function () {
+        $("#AdvancedSearch .selection").text(''+$(this).text());
+    });
+});
