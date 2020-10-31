@@ -9,8 +9,9 @@ h1 {
  }
 
 .card-img-top {
-  width: 150px;
-  height: 150px;
+  margin-top: 50px;
+  margin:0 auto;
+  width: 700px;
   padding-top: 50px;
 }
 
@@ -19,10 +20,11 @@ h1 {
   padding-top: 100px;
 }
 
-body, header {
+body, header{
       background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg");
       background-size: 100%;
-      background-attachment: fixed;
+      background-attachment: fixed;     
+      text-align: center;
 }
 
 .card {
@@ -55,4 +57,9 @@ body, header {
 .file-upload-container:hover {
     cursor: pointer;
     background: #3949AB;
+}
+
+.dropdown {
+  text-align: left;
+  
 }
