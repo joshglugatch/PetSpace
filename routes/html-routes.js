@@ -4,14 +4,14 @@ var isAuthenticated = require("../config/isAuthenticated");
 
 module.exports = function(app) {
 
-    app.get("/", function(req, res) {
+    app.get("/login", function(req, res) {
         if (req.user) {
             res.redirect("/members");
         }    
         res.sendFile(path.join(__dirname, "../public/signup.html"));  
     });
 
-    app.get("/login", function(req, res) {
+    app.get("/", function(req, res) {
         if (req.user) {
           res.redirect("/members");
         }
@@ -19,13 +19,6 @@ module.exports = function(app) {
       });
 
       app.get("/members", isAuthenticated, function(req, res) {
-      res.sendFile(path.join(__dirname, "../public/members.html"));
-    });
-
-    app.get("/results", function(req, res) {
-        if (req.user) {
-            res.redirect("/members");
-          }
-        res.sendFile(path.join(__dirname, "../public/members.html"));
+      res.sendFile(path.join(__dirname, "../public/results.html"));
     });
   };
