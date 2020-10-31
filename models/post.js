@@ -3,6 +3,7 @@ module.exports = function(sequelize, DataTypes) {
       title: {
         type: DataTypes.STRING,
         allowNull: false,
+        defaultValue: " ",
         validate: {
           len: [0-150]
         }
