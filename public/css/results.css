@@ -7,3 +7,7 @@ header, body{
     background-size: 100%;
     background-attachment: fixed;
   }
+
+h1 {
+    color: white;
+  }
