@@ -38,14 +38,10 @@ module.exports = function(app) {
     });
   
 
-    app.get("/api/comments/:postID", function(req, res) { 
-      db.Comment.findAll({where: {
-        postID: req.params.postID
-      }}).then(function(result) {
+    app.get("/api/comments", function(req, res) { 
+      db.Comment.findAll({}).then(function(result) {
         res.json(result);
       });
     });
-
-
 
   };
