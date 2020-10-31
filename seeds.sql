@@ -1,17 +1,24 @@
 USE petSpace;
-INSERT INTO users (username,password,createdAt,updatedAt) VALUES ("josh","password",'2016-08-09 04:05:02','2016-08-09 04:05:02');
-​
+INSERT INTO users (username,password,createdAt,updatedAt) VALUES ("DogLover12","password",'2016-08-09 04:05:02','2016-08-09 04:05:02');
+
+INSERT INTO users (username,password,createdAt,updatedAt) VALUES ("MeOWwww25","password",'2016-08-09 04:05:02','2016-08-09 04:05:02');
+
+INSERT INTO users (username,password,createdAt,updatedAt) VALUES ("iLikeTurtles4","password",'2016-08-09 04:05:02','2016-08-09 04:05:02');
+
 INSERT INTO posts (title,imageURL,animal,createdAt,updatedAt,userID) 
-VALUES ("test title","https://image.shutterstock.com/image-photo/mountains-during-sunset-beautiful-natural-600w-407021107.jpg","dog",'2016-08-09 04:05:02','2016-08-09 04:05:02',1);
-​
+VALUES ("This dog is my favorite!","https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/german-wirehaired-pointer-on-the-swamp-royalty-free-image-860979960-1560893464.jpg?crop=0.447xw:1.00xh;0.433xw,0&resize=980:*","dog",'2016-08-09 04:05:02','2016-08-09 04:05:02',1);
+
 INSERT INTO comments (comment,createdAt,updatedAt,postID,userID) 
-VALUES ("test comment",'2016-08-09 04:05:02','2016-08-09 04:05:02',1,1);
-​
+VALUES ("OMG so cute!",'2016-08-09 04:05:02','2016-08-09 04:05:02',1,3);
+
 INSERT INTO posts (title,imageURL,animal,createdAt,updatedAt,userID) 
-VALUES ("test 2","https://image.shutterstock.com/image-photo/mountains-during-sunset-beautiful-natural-600w-407021107.jpg","cat",'2016-08-09 04:05:02','2016-08-09 04:05:02',1);
-​
+VALUES ("Caturrito","https://static.india.com/wp-content/uploads/2015/11/089.jpg","cat",'2016-08-09 04:05:02','2016-08-09 04:05:02',2);
+
+INSERT INTO comments (comment,createdAt,updatedAt,postID,userID)
+VALUES ("Omnomnomnom lol",'2016-08-09 04:05:02','2016-08-09 04:05:02',2,1);
+
 INSERT INTO comments (comment,createdAt,updatedAt,postID,userID) 
-VALUES ("test 2 comment",'2016-08-09 04:05:02','2016-08-09 04:05:02',2,1);
-​
+VALUES ("not as cool as turtles",'2016-08-09 04:05:02','2016-08-09 04:05:02',2,3);
+
 INSERT INTO comments (comment,createdAt,updatedAt,postID,userID) 
-VALUES ("test 3 comment",'2016-08-09 04:05:02','2016-08-09 04:05:02',2,1);
+VALUES ("So floofy!",'2016-08-09 04:05:02','2016-08-09 04:05:02',1,2);
