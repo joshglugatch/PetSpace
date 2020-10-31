@@ -2,7 +2,11 @@
 $(document).ready(function() {
 
   var postContainer = $(".postContainer")
+  
+  
   var posts = [];
+  
+  
   
   getData();
   
@@ -35,7 +39,7 @@ $(document).ready(function() {
     console.log(post)
     var commentString = "";
   for(var i=0; i < post.Comments.length;i++){
-    commentString += '<p>'+ post.Comments[i].comment+ '</p>'
+    commentString += '<p class="commentStr">'+post.Comments[i].User.username +":  "+ post.Comments[i].comment+ '</p>'
   }
   
   
@@ -58,7 +62,7 @@ $(document).ready(function() {
                 <span class="input-group-text"></span>
               </div>
               <textarea class="form-control" aria-label="With textarea"></textarea>
-              <button type="button" class="btn btn-outline-primary">LIKE POST!</button>
+              <button type="button" class="btn btn-outline-primary likeBtn">LIKE POST!</button>
             </div>
           </div>
         </div>
