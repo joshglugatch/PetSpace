@@ -1,3 +1,5 @@
+
+
 USE petSpace;
 INSERT INTO users (username,password,createdAt,updatedAt) VALUES ("DogLover12","password",'2016-08-09 04:05:02','2016-08-09 04:05:02');
 
@@ -14,7 +16,10 @@ VALUES ("OMG so cute!",'2016-08-09 04:05:02','2016-08-09 04:05:02',1,3);
 INSERT INTO posts (title,imageURL,animal,createdAt,updatedAt,userID) 
 VALUES ("Caturrito","https://static.india.com/wp-content/uploads/2015/11/089.jpg","cat",'2016-08-09 04:05:02','2016-08-09 04:05:02',2);
 
-INSERT INTO comments (comment,createdAt,updatedAt,postID,userID)
+INSERT INTO posts (title,imageURL,animal,createdAt,updatedAt,userID) 
+VALUES ("I like turtles...","https://api.timeforkids.com/wp-content/uploads/2020/04/turtle1.jpg?w=1455&h=970","other",'2016-08-09 04:05:02','2016-08-09 04:05:02',3);
+
+INSERT INTO comments (comment,createdAt,updatedAt,postID,userID) 
 VALUES ("Omnomnomnom lol",'2016-08-09 04:05:02','2016-08-09 04:05:02',2,1);
 
 INSERT INTO comments (comment,createdAt,updatedAt,postID,userID) 
