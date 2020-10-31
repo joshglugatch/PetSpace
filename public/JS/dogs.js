@@ -51,7 +51,7 @@ $(document).ready(function () {
         `
             <div class="col-lg mb-4">
                 <div class="card h-100">
-                <img class="card-img-top" src="${post.imageURL}" alt="">
+                <img class="card-img-top img-fluid" src="${post.imageURL}" alt="">
                 <div class="card-body">
                 <h2 class="card-title caption">${post.User.username}:    ${post.title}</h2>
                 <p class="card-text"> ${commentString}</p>
@@ -59,8 +59,8 @@ $(document).ready(function () {
                 <div class="card-footer">
                 <div class="input-group">
                     
-                    <input type="text" class="form-control" aria-label="With textarea" style="border: orange 2px solid;"></input>
-                    <button type="button" class="btn" style="background-color: orange">Comment</button>
+                    <input type="text" class="form-control commentText" aria-label="With textarea" style="border: orange 2px solid;"></input>
+                    <button type="button" class="btn commentBtn" style="background-color: orange">Comment</button>
                 </div>
                 </div>
             </div>
@@ -75,5 +75,6 @@ $(document).ready(function () {
       $newInputRow.data("post", post);
       return $newInputRow;
     };
+    
   
   })
