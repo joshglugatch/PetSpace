@@ -11,7 +11,7 @@ module.exports = function(app) {
       }
       db.Post.findAll({
         where: query,
-        include: [db.User, db.Comment, db.Like]
+        include: [db.User, db.Like, {model: db.Comment, include: [db.User]}]
       }).then(function(result) {
         res.json(result);
       });
