@@ -2,11 +2,7 @@
 $(document).ready(function() {
 
   var postContainer = $(".postContainer")
-  
-  
   var posts = [];
-  
-  
   
   getData();
   
