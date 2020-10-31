@@ -1,5 +1,9 @@
 .jumbotron {
-    background-image: url("https://picsum.photos/id/537//300");
-    margin-top: 100px;
-   margin-bottom: 50px;
+    margin-top: 150px;
+    margin-bottom: 50px;
 }
+header, body{
+    background-image: url(../images/space-background.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+  }
