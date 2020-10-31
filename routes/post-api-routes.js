@@ -11,28 +11,27 @@ module.exports = function(app) {
       }
       db.Post.findAll({
         where: query,
-        include: [db.User, db.Comment, db.Like]
+        include: [db.User, db.Like, {model: db.Comment, include: [db.User]}]
       }).then(function(result) {
         res.json(result);
       });
     });
   
-    // Get route for retrieving a single post
-    app.get("/api/posts/:id", function(req, res) {
-      db.Post.findOne({
-        where: {
-          id: req.params.id
-        },
-        include: [db.User]
-      }).then(function(result) {
-        console.log(result);
-        res.json(result);
-      });
-    });
   
     // POST route for saving a new post
     app.post("/api/posts", function(req, res) {
       db.Post.create(req.body).then(function(result) {
+        res.json(result);
+      });
+    });
+
+    // GET for specific animal posts
+    app.get("/api/posts/:animal", function(req, res) {
+      
+      db.Post.findAll({
+        where: {animal: req.params.animal},
+        include: [db.User, db.Like, {model: db.Comment, include: [db.User]}]
+      }).then(function(result) {
         res.json(result);
       });
     });
