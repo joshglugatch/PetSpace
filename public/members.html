@@ -11,12 +11,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
   <Title>PetSpace</Title>
-  
+
   </header>  
   <body> 
     <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top">
-    <!-- <div class="container"> -->
+    <div class="container">
       <a class="navbar-brand" href="#"><img src="https://github.com/joshglugatch/PetSpace/blob/main/public/images/newLogo_petSpace.png?raw=true" width="150" height="150" class="d-inline-block align-top" alt="" loading="lazy">
         </a>
         <h1>PetSpace</h1>
@@ -56,17 +56,16 @@
   <div class="container">
 
     <!-- Jumbotron Header -->
-    <header class="jumbotron fluid">
-      <h1 class="display-4 text-center">#BLAH</h1>
+    <header class="jumbotron footer my-4">
+      <h1 class="display-3">Results</h1>
+      <p class="lead">check out the user page and see there most recent post or search an animal by category</p>
+        <a href="#" class="btn btn-info btn-lg">PetType</a>
+        <a href="" class="btn btn-info btn-rounded mb-4" data-toggle="modal" data-target="#createForm">Create Post</a>
+      </div>
     </header>
 
-    <!-- Page Features -->
-    <a href="#" class="btn btn-info btn-lg">PetType</a>
-    
-    <div class="text-center">
-      <a href="" class="btn btn-info btn-rounded mb-4" data-toggle="modal" data-target="#createForm">Create Post</a>
-    </div>
-
+    <!-- Page Features -->    
+  
     <div class="modal fade" id="createForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
   aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -119,7 +118,9 @@
   <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalRegisterForm"></a>
 </div>
 
-      <div class="col mb-4">
+      <div class="postContainer"></div>
+
+      <!-- <div class="col mb-4">
       <div class="card h-100">
         <img class="card-img-top mx-auto" style="width: 200px;" style src="http://placehold.it/500x325" alt="">
         <div class="card-body">
@@ -136,105 +137,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="col mb-4">
-      <div class="card h-100">
-        <img class="card-img-top mx-auto" style="width: 200px;" style src="http://placehold.it/500x325" alt="">
-        <div class="card-body">
-          <h2 class="card-title text-center">Caption title goes here</h2>
-          <p class="card-text"> This is where the post comments goes into.</p>
-        </div>
-        <div class="card-footer">
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text">Comment</span>
-            </div>
-            <textarea class="form-control" aria-label="With textarea"></textarea>
-            <button type="button" class="btn btn-outline-primary">LIKE POST!</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col mb-4">
-      <div class="card h-100">
-        <img class="card-img-top mx-auto" style="width: 200px;" style src="http://placehold.it/500x325" alt="">
-        <div class="card-body">
-          <h2 class="card-title text-center">Caption title goes here</h2>
-          <p class="card-text"> This is where the post comments goes into.</p>
-        </div>
-        <div class="card-footer">
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text">Comment</span>
-            </div>
-            <textarea class="form-control" aria-label="With textarea"></textarea>
-            <button type="button" class="btn btn-outline-primary">LIKE POST!</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  
-
-  <div class="col mb-4">
-    <div class="card h-100">
-      <img class="card-img-top mx-auto" style="width: 200px;" style src="http://placehold.it/500x325" alt="">
-      <div class="card-body">
-        <h2 class="card-title text-center">Caption title goes here</h2>
-        <p class="card-text"> This is where the post comments goes into.</p>
-      </div>
-      <div class="card-footer">
-        <div class="input-group">
-          <div class="input-group-prepend">
-            <span class="input-group-text">Comment</span>
-          </div>
-          <textarea class="form-control" aria-label="With textarea"></textarea>
-          <button type="button" class="btn btn-outline-primary">LIKE POST!</button>
-        </div>
-      </div>
-    </div>
   </div>
-
-  <div class="col mb-4">
-    <div class="card h-100">
-      <img class="card-img-top mx-auto" style="width: 200px;" style src="http://placehold.it/500x325" alt="">
-      <div class="card-body">
-        <h2 class="card-title text-center">Caption title goes here</h2>
-        <p class="card-text"> This is where the post comments goes into.</p>
-      </div>
-      <div class="card-footer">
-        <div class="input-group">
-          <div class="input-group-prepend">
-            <span class="input-group-text">Comment</span>
-          </div>
-          <textarea class="form-control" aria-label="With textarea"></textarea>
-          <button type="button" class="btn btn-outline-primary">LIKE POST!</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="col mb-4">
-    <div class="card h-100">
-      <img class="card-img-top mx-auto" style="width: 200px;" style src="http://placehold.it/500x325" alt="">
-      <div class="card-body">
-        <h2 class="card-title text-center">Caption title goes here</h2>
-        <p class="card-text"> This is where the post comments goes into.</p>
-      </div>
-      <div class="card-footer">
-        <div class="input-group">
-          <div class="input-group-prepend">
-            <span class="input-group-text">Comment</span>
-          </div>
-          <textarea class="form-control" aria-label="With textarea"></textarea>
-          <button type="button" class="btn btn-outline-primary">LIKE POST!</button>
-        </div>
-      </div>
-    </div>
-  
-
-    </div>
     <!-- /.row -->
 
 
