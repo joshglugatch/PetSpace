@@ -4,7 +4,7 @@ var isAuthenticated = require("../config/isAuthenticated");
 
 module.exports = function(app) {
 
-    app.get("/login", function(req, res) {
+    app.get("/signup", function(req, res) {
         if (req.user) {
             res.redirect("/members");
         }    
@@ -19,6 +19,6 @@ module.exports = function(app) {
       });
 
       app.get("/members", isAuthenticated, function(req, res) {
-      res.sendFile(path.join(__dirname, "../public/results.html"));
+      res.sendFile(path.join(__dirname, "../public/members.html"));
     });
   };

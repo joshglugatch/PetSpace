@@ -15,8 +15,8 @@
   </header>  
   <body> 
     <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top">
-    <div class="container">
+    <nav style="background-color:orange" class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
       <a class="navbar-brand" href="#"><img src="https://github.com/joshglugatch/PetSpace/blob/main/public/images/newLogo_petSpace.png?raw=true" width="150" height="150" class="d-inline-block align-top" alt="" loading="lazy">
         </a>
         <h1>PetSpace</h1>
@@ -26,29 +26,19 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Discover
-              <span class="sr-only">(current)</span>
-            </a>
+            <a class="nav-link text-white" href="#">MyPet</a>
+            <span class="sr-only">(current)</span>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Community</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">MyPet</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link text-white" href="#">AboutUS</a>
           </li>
         </ul>
-
         <div class="navbar-header">
-          <a class="navbar-brand nav-float-right" href="/logout">
+          <a class="navbar-brand nav-float-right text-white" href="/logout">
             Logout
           </a>
         </div>
-
       </div>
-    <!-- </div> -->
   </nav>
 
   <!-- Page Content -->
@@ -57,13 +47,35 @@
 
     <!-- Jumbotron Header -->
     <header class="jumbotron footer my-4">
-      <h1 class="display-3">Results</h1>
-      <p class="lead">check out the user page and see there most recent post or search an animal by category</p>
-        <a href="#" class="btn btn-info btn-lg">PetType</a>
-        <a href="" class="btn btn-info btn-rounded mb-4" data-toggle="modal" data-target="#createForm">Create Post</a>
-      </div>
+      <h1 class="display-3">Post Feeds</h1>
+      <p class="lead text-white">This app provides content feed for users to post and look at pictures of pets.
+        Where Users can like and comment posts.
+        Users can search specific pets based on their preference.
+        Check out the user page and see there most recent post or search an animal by category</p>
+        <div class="row buffer">
+            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 ">
+                    <div class="input-group" role="group" >
+                        <div class="input-group-btn" role="group">
+                        <button type="button" class="btn dropdown-toggle" id="AdvancedSearch" data-toggle="dropdown"  style="background-color:orange" > <span class="selection">Pet type:</span></button>
+                    <div class="dropdown-menu" id="dropdown" style="background-color:orange">
+                      <li><a class="dropdown-item" href="#" data-value="item1">All</a></li>
+                        <li><a class="dropdown-item" href="#" data-value="item2">Cats</a></li>
+                        <li><a class="dropdown-item" href="#" data-value="item3">Dogs</a></li>
+                        <li><a class="dropdown-item" href="#" data-value="item4">Others</a></li>
+                    </div>
+                    </div>
+                    </div>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-center">
+                    <div class="input-group" role="group">
+                        <input type="text" id="InquiryInput2" onblur="javascript:removeSpaces()" style="display:none" runat="server" class="form-control" Width="280px" placeholder="Asset Dept, Building, Asset MGR BEMSID #" />
+                    </div>
+            </div>
+            </div> 
+  </div>
     </header>
 
+    <a href="" class="btn btn-info btn-rounded mb-4" data-toggle="modal" data-target="#createForm">Create Post</a>
     <!-- Page Features -->    
   
     <div class="modal fade" id="createForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
@@ -118,6 +130,7 @@
   <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalRegisterForm"></a>
 </div>
 
+
       <div class="postContainer"></div>
 
       <!-- <div class="col mb-4">
@@ -139,6 +152,48 @@
       </div>
     </div> -->
 
+    <!-- <div class="col-md-4 clearfix  d-md-block">
+      <div class="card mb-2">
+        <div class="avatar-wrapper">
+          <img class="profile-pic" src="/assets/images/abc.jpg" data-toggle="modal" data-target="#basicExampleModal3" />
+          <div class="upload-button">
+          </div>
+        </div>
+    
+        <div class="card-body">
+    
+          <h4> <button type="button" class="card-title text-center font-weight-bold">
+              abc receipe</button> (click on button wont work, click on image to check) </h4>
+          <h3 class="description">This is short description in the card body.hio dvdjvd sscg sdgscsc sgssd sdjg c edsc sdcfsc dfkopseuccs sc</h3>
+          <div class="modal fade" id="basicExampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel3">Receipe-abc by dfgr</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+    
+                <div class="modal-body ">
+                  <img class="profile-pic" src="/assets/images/abc.jpg" />
+                  <p> Modal Box Description.
+                    sdc
+                    dfvdv
+                    sscg sdgscsc dfvfd
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    </div> -->
+
   </div>
     <!-- /.row -->
 
@@ -146,17 +201,19 @@
   <!-- /.container -->
 
   <!-- Footer -->
-  <footer class="py-5 bg-info">
+  <footer class="py-5 bg-dark">
     <div class="container">
       <p class="m-0 text-center text-white">Copyright: MIT &copy; PetSpace 2020</p>
     </div>
     <!-- /.container -->
   </footer>
+  <!-- <script src="https://code.jquery.com/jquery.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./JS/posts.js"></script>
     <script src="./JS/images.js"></script>
+    <script src="./JS/member.js"></script>
 
     <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
