@@ -37,6 +37,16 @@ module.exports = function(app) {
       });
     });
 
+    app.get("/api/user/:id", function(req, res) {
+      
+      db.Post.findAll({
+        where: {UserId: req.params.id},
+        include: [db.User, db.Like, {model: db.Comment, include: [db.User]}]
+      }).then(function(result) {
+        res.json(result);
+      });
+    });
+
     // POST new comments
     app.post("/api/comment", function(req, res) {
       db.Comment.create({
