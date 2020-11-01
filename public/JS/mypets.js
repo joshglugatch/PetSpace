@@ -29,7 +29,7 @@ $(document).ready(function () {
       var rowsToAdd = [];
   
   
-      for (var i = 0; i < posts.length; i++) {
+      for (var i = posts.length-1; i >= 0; i--) {
         rowsToAdd.push(createNewRow(posts[i]));
   
       }

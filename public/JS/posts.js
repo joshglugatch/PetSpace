@@ -20,7 +20,7 @@ $(document).ready(function () {
     postContainer.empty();
     var rowsToAdd = [];
 
-    for (var i = 0; i < posts.length; i++) {
+    for (var i = posts.length-1; i >= 0; i--) {
       rowsToAdd.push(createNewRow(posts[i]));
     }
     console.log(rowsToAdd)
