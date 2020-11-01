@@ -60,5 +60,7 @@ formData.append('upload_preset', CLOUDINARY_UPLOAD_PRESET)
     }).catch(function(err){
     console.log(err)
     });
+
     
 });
+

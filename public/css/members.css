@@ -40,6 +40,10 @@ body, header{
   box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
 }
 
+.modal-footer {
+  background: orange
+}
+
 .file-upload-container {
     width: 100%;
     height: 50px;
