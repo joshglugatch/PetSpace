@@ -41,8 +41,8 @@ body {
 }
 
 #loginLogo {
-	width: 100px;
-	margin-top: 36px;
+	width: 120px;
+	margin-top: 30px;
 }
 
 h1 {
@@ -56,28 +56,31 @@ span:before {
 	animation: animate infinite 40s;
 }
 @keyframes animate{
-	0%{
-		content: "Dog"
-	}
-	2%{
-		content: "Cat"
-	}
-	4%{
-		content: "Bird"
-	}
 	6%{
-		content: "Fish"
+		content: "Pet"
 	}
 	8%{
-		content: "Cute"
+		content: "Dog"
 	}
 	10%{
-		content: "Fun"
+		content: "Cat"
 	}
 	12%{
-		content: "Your"
+		content: "Bird"
 	}
 	14%{
+		content: "Fish"
+	}
+	16%{
+		content: "Cute"
+	}
+	18%{
+		content: "Fun"
+	}
+	20%{
+		content: "Your"
+	}
+	22%{
 		content: "Pet"
 	}
 }
