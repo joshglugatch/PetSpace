@@ -109,13 +109,13 @@
 
         <div class="modal-body mx-3">
           <div class="md-form mb-1">
-            <input type="text" id="title" class="form-control validate" placeholder="Title">
+            <input type="text" id="orangeForm-name" class="form-control validate" placeholder="Title">
             <label data-error="wrong" data-success="right" for="title"></label>
           </div>
 
           <div class="modal-body mx-3">
             <div class="input-group mb-3">
-              <select class="custom-select" id="animal" aria-label="Example select with button addon">
+              <select class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
                 <option selected>Choose your pet type...</option>
                 <option value="Dog">Dog</option>
                 <option value="Cat">Cat</option>
@@ -155,28 +155,7 @@
     <div class="col-md-2"></div>
   </div>
 
-    <div class="col-lg mb-4">
-      <div class="card h-100">
-        <div class="avatar-wrapper">
-          <img class="card-img-top mx-auto" style="width: 200px;" src="${post.imageURL}" width="500" height="300" alt="" data-toggle="modal" data-target="#basicExampleModal3">
-        <div class="upload-button">
-      <div class="card-body">
-        <h2 class="card-title text-center">${post.User.username} : ${post.title}</h2>
-        <p class="card-text"> ${commentString}</p>
-      </div>
-      <div class="card-footer">
-        <div class="input-group">
-          <div class="input-group-prepend">
-            <span class="input-group-text">Comment</span>
-          </div>
-          <textarea class="form-control" aria-label="With textarea"></textarea>
-            <button type="button" class="btn btn-outline-primary">LIKE POST!</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
+    
   <!-- Footer -->
   <footer class="py-2 bg-dark">
     <div class="container">
