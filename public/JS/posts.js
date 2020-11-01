@@ -46,7 +46,6 @@ $(document).ready(function () {
                 </div>
                 <div class="card-footer">
                 <div class="input-group">
-                    
                 <input type="text" class="form-control commentText${post.id}" aria-label="With textarea" style="border: orange 2px solid;"></input>
                     <button type="button" class="btn commentBtn" data-id="${post.id}" style="background-color: orange">Comment</button>
                 </div>
