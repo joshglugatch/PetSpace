@@ -1,6 +1,5 @@
 $(document).ready(function () {
     
-
     $(document).on("click", ".commentBtn", function(event) {
         event.preventDefault();
         var commentText = $(".commentText" + $(this).data("id")).val();
@@ -23,7 +22,7 @@ $(document).ready(function () {
                 $(".commentText" + $(this).data("id")).val("");
                 location.reload();
                 console.log(data);
-        });
+                 });
 
             });
           
