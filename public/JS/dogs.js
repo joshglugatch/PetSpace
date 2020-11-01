@@ -39,13 +39,8 @@ $(document).ready(function () {
       console.log(post)
       var commentString = "";
       for (var i = 0; i < post.Comments.length; i++) {
-        commentString += '<p class="card p-2 m-1">' + post.Comments[i].User.username + ":  " + post.Comments[i].comment + '</p>'
+        commentString += '<p class="card p-2 m-1"><strong>' + post.Comments[i].User.username + ":</strong>  " + post.Comments[i].comment + '</p>'
       }
-  
-  
-  
-  
-  
   
       var $newInputRow = $(
         `
@@ -53,12 +48,11 @@ $(document).ready(function () {
                 <div class="card h-100">
                 <img class="card-img-top img-fluid" src="${post.imageURL}" alt="">
                 <div class="card-body">
-                <h2 class="card-title caption">${post.User.username}:    ${post.title}</h2>
+                <h2 class="card-title caption"><strong>${post.User.username}:</strong>    ${post.title}</h2>
                 <p class="card-text"> ${commentString}</p>
                 </div>
                 <div class="card-footer">
                 <div class="input-group">
-                    
                 <input type="text" class="form-control commentText${post.id}" aria-label="With textarea" style="border: orange 2px solid;"></input>
                     <button type="button" class="btn commentBtn" data-id="${post.id}" style="background-color: orange">Comment</button>
                 </div>
@@ -69,12 +63,9 @@ $(document).ready(function () {
 
       )
 
-
-
-
       $newInputRow.data("post", post);
       return $newInputRow;
-    };
+    };  
     
   
   })
