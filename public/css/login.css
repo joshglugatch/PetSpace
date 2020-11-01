@@ -34,6 +34,7 @@ body {
 	background-attachment: fixed;     
 	text-align: center;
 	position: relative;
+	overflow-x: hidden;
 }
 
 .row {
