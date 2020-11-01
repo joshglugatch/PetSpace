@@ -9,3 +9,4 @@ $(function () {
       $("#AdvancedSearch .selection").text(''+$(this).text());
   });
 });
+
