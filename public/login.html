@@ -2,53 +2,64 @@
 <html lang="en">
 
 <head>
-  <title>PetSpace Login</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
-  <link href="css/login.css" rel="stylesheet">
+    <title>PetSpace Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
+    <link href="css/login.css" rel="stylesheet">
 </head>
 
 <body>
-     <div class="container col-md-6">
-        <div class="row">
-        <div class="login col-md-6 col-md-offset-6">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-5">
+        <h1><span></span>Space</h1>
+    </div> 
+    <div class="col-md-1">
+        <img id="loginLogo"
+            src="https://github.com/joshglugatch/PetSpace/blob/main/public/images/newLogo_petSpace.png?raw=true" alt="logo">
+    </div>
+    <div class="col-md-3"></div>
+    </div>
+    <div class="row">
+    <h4>Danger, Will Robinson!!!</h4>
+    <div class="row">
+        <div class="col-xs-3"></div>
+        <div class="col-xs-6">
             <h2>Login Form</h2>
             <form class="login">
-            <div class="form-group">
-                <label for="exampleInputusername1"></label>
-                <input type="username" class="form-control" id="username-input" placeholder="username">
-            </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1"></label>
-                <input type="password" class="form-control" id="password-input" placeholder="Password">
-            </div>
-            <div class="form-check">
-                <label class="form-check-label">
-                <input type="checkbox" class="form-check-input">
-                <small>Remember Me</small>
-                </label>
-                <button type="submit" class="btn btn-login">Submit</button>
-            </div>
+                <div class="form-group">
+                    <label for="exampleInputusername1"></label>
+                    <input type="username" class="form-control" id="username-input" placeholder="username">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1"></label>
+                    <input type="password" class="form-control" id="password-input" placeholder="Password">
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input">
+                        <small>Remember Me</small>
+                    </label>
+                    <button type="submit" class="btn btn-login">Submit</button>
+                </form>
+                
+                <p style="color: white">Or sign up <a href="/signup">here</a></p>
+                </div>
+        </div>
+        
+        <div class="col-xs-3"></div>
 
-            </form>
-            <br />
-            <p>Or sign up <a href="/signup">here</a></p>
-        </div>
-        </div>
-    </div>
 
-    <div class="container col-md-6">
-        <div class="row">
-        <div class="col-md-9">
-            <img id="loginLogo" src="https://github.com/joshglugatch/PetSpace/blob/main/public/images/newLogo_petSpace.png?raw=true" width="500" height="500" class="d-inline-block align-top" alt="" loading="lazy">
-            <h2>Danger, Will Robinson!!!</h2>
-        </div>
-        </div>
+
     </div>
 
 
 
+
+
+
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/login.js"></script>
 

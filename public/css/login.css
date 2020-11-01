@@ -1,6 +1,6 @@
 form.signup,
 form.login {
-  margin-top: 50px;
+  margin-top: 0px;
 }
 
 .form-check-label {
@@ -8,13 +8,19 @@ form.login {
 }
 
 .container {
-    float: left;
-    margin-top: 150px;
+	
+	display: flexbox;
+	
+    margin-top: 0px;
     color: white;
 }
 
 h2 {
-  	color: white;
+	color: white;
+}
+
+h4 {
+  	color: rgb(133, 133, 133);
 }
 
 .btn {
@@ -24,16 +30,57 @@ h2 {
 
 body {
 	background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg");
-	background-size: 100%;
+	background-size: cover;
 	background-attachment: fixed;     
 	text-align: center;
+	position: relative;
 }
 
 .row {
-	margin-top: 120px;
+	margin-top: 20px;
 }
 
-.loginLogo {
-	margin-bottom: 1000px;
+#loginLogo {
+	width: 120px;
+	margin-top: 30px;
 }
 
+h1 {
+	margin-top: 20px;
+	font-size: 100px;
+	color: white
+}
+
+span:before {
+	content: "Pet";
+	animation: animate infinite 40s;
+}
+@keyframes animate{
+	6%{
+		content: "Pet"
+	}
+	8%{
+		content: "Dog"
+	}
+	10%{
+		content: "Cat"
+	}
+	12%{
+		content: "Bird"
+	}
+	14%{
+		content: "Fish"
+	}
+	16%{
+		content: "Cute"
+	}
+	18%{
+		content: "Fun"
+	}
+	20%{
+		content: "Your"
+	}
+	22%{
+		content: "Pet"
+	}
+}
