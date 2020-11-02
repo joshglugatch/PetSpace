@@ -1,4 +1,3 @@
-// 
 $(document).ready(function() {
     var loginForm = $("form.login");
     var usernameInput = $("input#username-input");
@@ -29,8 +28,8 @@ $(document).ready(function() {
           window.location.replace("/members");
           // If there's an error, log the error
         })
-        .catch(function(err) {
-          console.log(err);
-        });
+        // .catch(function(err) {
+        //   console.log(err);
+        // });
     }
   });
