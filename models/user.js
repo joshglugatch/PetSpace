@@ -15,7 +15,6 @@ module.exports = function(sequelize, DataTypes) {
     {
       User.hasMany(models.Post) 
       User.hasMany(models.Comment) 
-      User.hasMany(models.Like) 
     };
   
     return User;
