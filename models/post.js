@@ -23,7 +23,6 @@ module.exports = function(sequelize, DataTypes) {
       Post.belongsTo(models.User, {foreignKey: { allowNull: false }})
 
       Post.hasMany(models.Comment) 
-      Post.hasMany(models.Like)
 
 
   }
