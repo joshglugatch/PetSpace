@@ -12,7 +12,7 @@ module.exports = function(app) {
       }
       db.Post.findAll({
         where: query,
-        include: [db.User, db.Like, {model: db.Comment, include: [db.User]}]
+        include: [db.User, {model: db.Comment, include: [db.User]}]
       }).then(function(result) {
         res.json(result);
       });
@@ -31,7 +31,7 @@ module.exports = function(app) {
       
       db.Post.findAll({
         where: {animal: req.params.animal},
-        include: [db.User, db.Like, {model: db.Comment, include: [db.User]}]
+        include: [db.User, {model: db.Comment, include: [db.User]}]
       }).then(function(result) {
         res.json(result);
       });
@@ -41,7 +41,7 @@ module.exports = function(app) {
       
       db.Post.findAll({
         where: {UserId: req.params.id},
-        include: [db.User, db.Like, {model: db.Comment, include: [db.User]}]
+        include: [db.User, {model: db.Comment, include: [db.User]}]
       }).then(function(result) {
         res.json(result);
       });
