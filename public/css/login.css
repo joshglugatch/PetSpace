@@ -52,7 +52,7 @@ h1 {
 	color: white
 }
 
-span:before {
+.animate:before {
 	content: "Pet";
 	animation: animate infinite 40s;
 }
