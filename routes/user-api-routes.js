@@ -37,7 +37,7 @@ module.exports = function(app) {
           res.redirect(307, "/api/login");
         })
         .catch(function(err) {
-          res.status(401).send("Invalid Username or Password");
+          res.status(401).json({msg: "Invalid Username or Password"});
         });
     });
   
