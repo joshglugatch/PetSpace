@@ -120,7 +120,7 @@ Login/Signup with PetSpace:
 As a User, I want to be able to login and Signup with my own username.
 
 Acceptance criteria:
-Given i’m a User, when I sign up with a username and password, then I will be logged in with my own personal username.
+Given I’m a User, when I sign up with a username and password, then I will be logged in with my own personal username.
 
 <br>
 
@@ -139,7 +139,7 @@ Create a post:
 As a User, I want to create posts so I can share my pet.
 
 Acceptance criteria:
-Given i’m a User, when I click on a create post button, I can input a title, category, and image to show off my pet.
+Given I’m a User, when I click on a create post button, I can input a title, category, and image to show off my pet.
 
 
 <br>
@@ -156,7 +156,7 @@ See feeds of  all posts:
 As a User, I want to see new posts on the main page.
 
 Acceptance criteria:
-Given i’m a User, when i log in to the main page, I will see a list a newly updated feeds for my entertainment.
+Given I’m a User, when I log in to the main page, I will see a list a newly updated feeds for my entertainment.
 
 <br>
 
@@ -167,13 +167,13 @@ Search by a pet:
 As a User, I want to search a pet by category.
 
 Acceptance criteria:
-Given i’m a User, when i click the sorting dropdown, a list of pet categories is provided so I can see a specific type of pet. 
+Given I’m a User, when I click the sorting dropdown, a list of pet categories is provided so I can see a specific type of pet. 
 
 
 
 ![Display](./public/images/filteredresultsstructure.jpg)
 
-![Demo](./public/images/filteredpets.gif)
+![Demo](https://github.com/joshglugatch/PetSpace/blob/main/public/images/FilteredPets.gif?raw=true)
 
 <br>
 
