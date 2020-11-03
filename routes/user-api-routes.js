@@ -9,6 +9,11 @@ module.exports = function(app) {
       });
     });
   
+    app.post("/api/login", passport.authenticate("local"), function(req, res) {
+      console.log(req)
+      res.json(req.user);
+    });
+
     app.get("/api/users/:id", function(req, res) {
       
       db.User.findOne({
@@ -21,9 +26,7 @@ module.exports = function(app) {
       });
     });
 
-    app.post("/api/login", passport.authenticate("local"), function(req, res) {
-      res.json(req.user);
-    });
+
 
     app.post("/api/signup", function(req, res) {
       db.User.create({
@@ -34,7 +37,7 @@ module.exports = function(app) {
           res.redirect(307, "/api/login");
         })
         .catch(function(err) {
-          res.status(401).json(err);
+          res.status(401).send("Invalid Username or Password");
         });
     });
   

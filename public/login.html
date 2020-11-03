@@ -13,7 +13,7 @@
     <div class="row">
         <div class="col-md-3"></div>
         <div class="col-md-6">
-        <h1><span></span>Space</h1>
+        <h1><span class="animate"></span>Space</h1>
     </div> 
     <div class="col-md-3"></div>
     </div>
@@ -32,6 +32,10 @@
                     <label for="exampleInputPassword1"></label>
                     <input type="password" class="form-control" id="password-input" placeholder="Password">
                 </div>
+                <div style="display: none" id="alert" class="alert alert-danger" role="alert">
+                    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                    <span class="sr-only">Error:</span> <span class="msg"></span>
+                  </div>
                 <div class="form-check">
                     <label class="form-check-label">
                         <input type="checkbox" class="form-check-input">
