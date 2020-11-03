@@ -60,28 +60,44 @@ span:before {
 	6%{
 		content: "Pet"
 	}
+
 	8%{
+		content: "Use"
+	}
+	
+	10%{
 		content: "Dog"
 	}
-	10%{
+	
+	12%{
+		content: "This"
+	}
+	
+	14%{
 		content: "Cat"
 	}
-	12%{
-		content: "Bird"
-	}
-	14%{
-		content: "Fish"
-	}
 	16%{
-		content: "Cute"
+		content: "Or"
 	}
 	18%{
-		content: "Fun"
+		content: "Bird"
 	}
 	20%{
-		content: "Your"
+		content: "Else"
 	}
 	22%{
+		content: "Fish"
+	}
+	24%{
+		content: "Cute"
+	}
+	26%{
+		content: "Fun"
+	}
+	28%{
+		content: "Your"
+	}
+	30%{
 		content: "Pet"
 	}
 }

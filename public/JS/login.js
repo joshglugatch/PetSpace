@@ -1,4 +1,3 @@
-// 
 $(document).ready(function() {
     var loginForm = $("form.login");
     var usernameInput = $("input#username-input");
