@@ -71,22 +71,18 @@ var PORT = process.env.PORT || 8080;
 
 To run database locally you must install MySQL2 and create a local server. Make sure your port, user, and password match. To create the compatible tables you must run the schema.sql file in your workbench.
 You can include some provided table data by running the seeds.sql in your workbench as well.
-Please make sure the following match your personal MySql information, and that the database is set to "petSpace".
+Please make sure the following match your personal MySql information in the config.json file, and that the database is set to "petSpace".
 
 ```javaScript
-var connection;
 
-if(process.env.JAWSDB_URL){
-connection = mysql.createConnection(process.env.JAWSDB_URL);
-}else{
-  connection = mysql.createConnection({
-  host: "localhost",
-  port: 3306,
-  user: "root",
-  password: "password",
-  database: "petSpace"
-});
-};
+"development": {
+    "username": "root",
+    "password": "password",
+    "database": "petSpace",
+    "host": "127.0.0.1",
+    "port": 3306,
+    "dialect": "mysql"
+  }
 
 ```
 
